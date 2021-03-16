@@ -1,0 +1,898 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+#top-navbar{
+    display: flex;
+    padding:8px 23px;
+    background:rgb(22, 168, 156);
+}
+#top-navbar h3{
+    margin-right:15px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top:9px;
+    font-weight:bold;
+}
+#top-navbar div{
+    align-items:right;
+    margin-left:auto;
+    margin-right:12px;
+}
+.btn-nav{
+    border:none;
+    margin-right: 18px;
+    font-family: 'Anton', sans-serif;
+    background-color:rgb(245, 218, 241);
+    border-radius:18px;
+    padding:7px;
+    cursor:pointer;
+}
+.btn-nav:hover{
+    background-color:rgb(240, 180, 231)
+}
+#bottom-navbar{
+    display:flex;
+    background:rgb(240, 157, 80);
+    position:sticky;
+}
+#bottom-navbar img{
+    width:9%;
+    margin-left:15px;
+    margin-bottom:5px;
+}
+.menu{
+    margin:auto;
+    /* background-color: rgb(230, 110, 63); */
+    width:60%;
+}
+.menu ul{
+    display:flex;
+}
+.menu ul li{
+    padding:15px 13px;
+    list-style: none;
+    margin:2px 12px;
+}
+.menu ul li a{
+    text-decoration:none;
+    font-family: 'Satisfy', cursive;
+    font-size:1.4rem;
+    color:rgb(173, 16, 77);
+}
+.menu ul li a:hover{
+    color:rgb(233, 16, 27);
+}
+.menu ul li a:active{
+    text-decoration:underline;
+    color:rgb(233, 16, 27);
+}
+#intro{
+    position:relative;
+    animation:bg 10s ease-in-out infinite;
+    border:2px solid black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:34px;
+    height:450px;
+}
+#intro h2{
+    color:rgb(24, 231, 238);
+    font-size:3.7rem;
+    margin-bottom:3rem;
+}
+#intro p{
+    font-size:2rem;
+    color:rgb(241, 125, 16);
+    font-weight: bold;
+    margin-bottom:2rem;
+}
+#intro div{
+    font-size:2.3rem;
+    color:yellow;
+    display:flex;
+    animation:first 3s steps(19) infinite;
+    animation-delay:3s;
+    overflow:hidden;
+    white-space: nowrap;
+}
+#intro button{
+    border-radius:18px;
+    border:2px solid orange;
+    background-color:green;
+    color:yellow;
+    margin-top:19px;
+    padding:12px;
+    cursor:pointer;
+    font-size:0.9rem;
+}
+#intro button:hover{
+    background-color:rgb(24, 236, 70);
+    color:black;
+    font-weight:bold;
+}
+@keyframes first{
+    0%{
+        width:0ch;
+    }
+    100%{
+        width:22ch;
+    }
+}
+@keyframes bg{
+    0%,100%{
+       background:no-repeat center center/cover url('../html/bg.jpg');
+    }
+    50%{
+        background:no-repeat center center/cover url('../html/bg2.jpg');
+    }
+}
+#pass h2{
+    color:green;
+    margin-left:28rem;
+    margin-top:2.3rem;
+    font-size:3rem;
+    font-family: 'Piedra', cursive;
+    text-shadow: limegreen;
+}
+#offer{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin:19px 34px;
+    font-family: 'Piedra', cursive;
+}
+.box a{
+    text-decoration:none;
+}
+.box img{
+    width:179px;
+    margin-left:72px;
+}
+.box h4{
+    margin-left:86px!important;
+    font-size:1.4rem;
+    margin-top:8px;
+    text-decoration:underline;
+    color:black;
+}
+.box p{
+    font-size:1.2rem;
+    font-family:cursive;
+    color:black;
+}
+.box{
+    border:2px solid black;
+    margin:23px 120px;
+    padding:25px;
+    background-color:rgb(114, 186, 245);
+}
+.box:hover{
+    transform:scale(1.1);
+    background-color:rgb(39, 142, 226);
+    cursor:pointer;
+}
+#about{
+    background-color:rgb(32, 29, 29);
+    height:40%;
+}
+#about h3{
+    font-size:2.3rem;
+    color:gold;
+    padding:6.8px;
+}
+.about{
+    display:flex;
+}
+.aboutus{
+    width:60%;
+    padding:15px;
+}
+.aboutus h4{
+    color:rgb(238, 206, 146);
+    font-size:1.2rem;
+}
+.aboutus p{
+    color:white;
+    padding:10px;
+    font-size:1.1rem;
+}
+#aboutus2{
+    margin-top:2rem;
+    margin-left:14rem;
+}
+#aboutus2 div{
+   display:flex;
+   margin:30px 17px;
+}
+#aboutus2 div h5{
+    color:gold;
+    font-size:1.4rem;
+}
+#aboutus2 div span{
+    color:rgb(243, 220, 220);
+    font-size:1.2rem;
+    padding:1px 7px;
+    margin-left:5px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bold;
+}
+#themes h2{
+    color:orangered;
+    font-family:'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:3.4rem;
+    justify-content: center;
+    text-align: center;
+}
+.align{
+    display:flex;
+    margin:0rem 0.7rem;
+    padding:2rem 0.3rem;
+}
+.photos{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin-right:1.5rem;
+    align-items: stretch;
+    border:2px solid green;
+}
+#title{
+    display:flex;
+}
+.goto{
+    margin-right:8rem;
+    margin-left:7rem;
+}
+.goto a{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:19px;
+    text-decoration: none;
+    color: tomato;
+    font-weight: bold;
+}
+.goto a:hover{
+    color:rgb(116, 79, 10);
+    text-decoration: underline;
+}
+#themes button{
+      margin-left:36rem;
+      margin-top:15px;
+      padding:12px;
+      border-radius:15px;
+      background-color:greenyellow;
+      border:2px solid black;
+      font-size:0.8rem;
+      font-weight:bold;
+      font-family:sans-serif;
+      cursor:pointer;
+}
+#themes button:hover{
+    background-color:darkgreen;
+    color:yellow;
+}
+#reasons{
+    background-color:rgb(10, 10, 48);
+    margin-top:8px;
+}
+#reasons h2{
+    color:gold;
+    font-size:3.4rem;
+    justify-content: center;
+    text-align: center;
+}
+.points{
+    display:grid;
+    grid-gap:1.5rem;
+    grid-template-columns:repeat(3,300px) ;
+    margin-top:20px;
+    justify-content:center;
+    align-items:center;   
+}
+.flex{
+    border:2px solid rgb(197, 247, 242);
+    width:200px;
+    color:white;
+    padding:10px;
+    margin-bottom:12px;
+}
+.copy{
+    text-align:center;
+    background-color:rgb(65, 60, 60);
+    color:rgb(233, 223, 223);
+    padding:7px;
+}
+#sponsor{
+    background-color:crimson;
+    height:310px;
+}
+.sponsorship{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin:19px;
+}
+#sponsor h2{
+    color:rgb(238, 241, 16);
+    font-family:'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:3.4rem;
+    justify-content: center;
+    text-align: center;
+}
+#sponsor img{
+    width:56%;
+    border:2px solid lightgreen;
+}
+#sponsor img:hover{
+    transform:scale(1.1);
+}
+#contest{
+    position:relative;
+    background:no-repeat center center/cover url('../html/contestbg.jpg');
+    height:657px;
+    display:flex;
+}
+.part1{
+    width:50%;
+}
+.part1 h2{
+   color:rgb(5, 5, 116);
+   font-size:4rem;
+   padding:50px;
+   padding-top:120px;
+   padding-bottom:30px;
+   text-decoration: underline;
+}
+.part1 p{
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size:1.2rem;
+   color:rgb(26, 2, 26);
+   padding:5px!important;
+   font-weight:bold;
+}
+.part2 h2{
+    color:rgb(43, 22, 6);
+    font-size:3rem;
+    padding:50px;
+    padding-top:130px;
+    padding-bottom:30px;
+    padding-left:210px;
+    text-decoration: underline;
+ }
+ #formforcontest{
+  display:flex;
+  flex-direction: column;
+  margin-left:200px;
+ }
+ #formforcontest label{
+     color:rgb(23, 3, 114);
+     font-size:18px;
+     font-weight: bold;
+     padding-bottom:2px!important;
+ }
+ #formforcontest input{
+    width:200px;
+    margin:15px;
+    padding:8px;
+    background-color:rgb(190, 245, 197);
+    color:black;
+ }
+ #formforcontest button{
+     border:3px solid black;
+     border-radius:19px;
+     background-color:orange;
+     color:rgb(83, 4, 156);
+     width:30%;
+     margin-left:70px;
+     padding:12px;
+ }
+ #formforcontest button:hover{
+     cursor:pointer;
+     background-color: rgb(230, 81, 13);
+     color:rgb(35, 231, 94);
+     font-weight:bold;
+ }
+ #offercoupon{
+     display:flex;
+ }
+ #offers h2{
+    margin-left:22rem;
+    margin-top:1.8rem;
+    font-size:3rem;
+    font-family: 'Piedra', cursive;
+ }
+ #passcoupon{
+     display:flex;
+ }
+ #passes h2{
+    margin-left:22rem;
+    margin-top:1.8rem;
+    font-size:3rem;
+    font-family: 'Piedra', cursive; 
+ }
+ .student img{
+    width:100%;
+    height:200px;
+    cursor:pointer;
+ }
+ .birthday img{
+     width:100%;
+     height:200px;
+     cursor:pointer;
+ }
+ .student{
+    border:2px solid darkblue;
+    width:46%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin:35px 14px;
+ }
+ .birthday{
+     border:2px solid darkblue;
+     width:46%;
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items:center;
+     margin:35px 14px;
+ }
+ .student p{
+    font-family:cursive;
+    text-align: center;
+    color:rgb(240, 11, 118);
+    font-weight: bold;
+    display:none;
+ }
+ .birthday p{
+     font-family:cursive;
+     text-align: center;
+     color:rgb(240, 11, 118);
+     font-weight: bold;
+     display:none;
+ }
+ .student p strong{
+    color:green;
+ }
+ .birthday p strong{
+     color:green;
+ }
+ .group{
+    border:2px solid darkblue;
+    width:46%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin:35px 14px;
+ }
+ .business{
+    border:2px solid darkblue;
+    width:46%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin:35px 14px;
+ }
+ .group img{
+    width:100%;
+    height:200px;
+    cursor:pointer;
+}
+.business img{
+    width:100%;
+    height:200px;
+    cursor:pointer;
+}
+.group p{
+    font-family:cursive;
+    text-align: center;
+    color:rgb(240, 11, 118);
+    font-weight: bold;
+    display:none;
+}
+.business p{
+    font-family:cursive;
+    text-align: center;
+    color:rgb(240, 11, 118);
+    font-weight: bold;
+    display:none;
+}
+.group p strong{
+    color:green;
+} 
+.business p strong{
+    color:green;
+}
+#contact h2{
+    margin-left:30rem;
+    margin-top:2rem;
+    font-size:3rem;
+    font-family: cursive;
+    color:blue;
+    text-decoration: underline;
+}
+#contact h3{
+    margin-left:31rem;
+    margin-top:0.3rem;
+    font-size:1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#contact h4{
+    margin-left:31rem;
+    margin-top:0.3rem;
+    font-size:1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#numbers{
+    display:grid;
+    margin:8px;
+    grid-template-columns:3fr 3fr 3fr;
+    grid-template-columns:repeat(autofit,minmax(16rem,3fr));
+}
+.tele{
+    width:18rem;
+    margin:10px 34px;
+    border:2px solid black;
+    padding:8px;
+    background-color:rgb(243, 205, 134);
+}
+#contactform{
+    position:relative;
+    background:no-repeat center center/cover url('../html/contactus.jpg');
+    height:400px;
+}
+#contactform h3{
+    margin-left:27rem;
+    margin-top:2rem;
+    font-size:3rem;
+    font-family: cursive;
+    color:rgb(3, 27, 1);
+    text-decoration: underline;
+}
+#submitform{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:1.2rem;
+    color:rgb(78, 5, 21);
+    padding:9px;
+    font-weight:bold;
+}
+#message{
+    width:13rem;
+    height:99px;
+}
+#submitform input{
+    width:12rem;
+    padding:8px;
+}
+#submitform button{
+    border:2px solid black;
+    border-radius:15px;
+    color:yellow;
+    background-color:blue;
+    font-weight:bold;
+    padding:6px;
+    margin:6px;
+    width:100px;
+    cursor:pointer;
+}
+#submitform button:hover{
+    background-color:rgb(7, 8, 88);
+    color:rgb(238, 238, 133);
+}
+#chatwithus h2{
+    margin-left:27rem;
+    margin-top:2rem;
+    font-size:3rem;
+    font-family: cursive;
+    color:rgb(3, 27, 1);
+    text-decoration: underline;
+}
+#socialmedia{
+    display:grid;
+    margin:8px;
+    grid-template-columns:3fr 3fr 3fr;
+    grid-template-columns:repeat(autofit,minmax(16rem,3fr));
+}
+.description{
+    width:18rem;
+    margin:10px 34px;
+    display:flex;
+    flex-direction:column;
+    border:2px solid black;
+    padding:8px;
+    justify-content:center;
+    align-items:center;
+    background-color:rgb(243, 205, 134);
+    font-weight:bold;
+}
+.description img{
+    width:44%;
+    margin-bottom:4px;
+}
+.description strong{
+    color:blue;
+    font-weight:bold;
+    font-size:20px;
+    cursor:pointer;
+}
+.description strong:hover{
+    text-decoration:underline;
+}
+#followus h3{
+    margin-left:24rem;
+    margin-top:2rem;
+    font-size:3rem;
+    font-family: cursive;
+    color:rgb(3, 27, 1);
+    text-decoration: underline;
+}
+.followuson{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.follow img{
+    width:34%;
+    margin:4px -52px;
+    padding:0px;
+    cursor:pointer;
+}
+#plantovisit h2{
+    margin:2rem;
+    font-size:3.5rem;
+}
+.dates{
+    display:flex;
+}
+.visit{
+    margin:17px;
+    margin-left:35px;
+    font-size:1.1rem;
+    font-weight:bold;
+    display:flex;
+    flex-direction:column;
+}
+.visit input{
+    width:60%;
+    padding:4px;
+    font-weight:bold;
+}
+.visit button{
+    margin:15px;
+    width:60%;
+    padding:7px;
+    background-color:cyan;
+    color:black;
+    border:2px solid black;
+    border-radius:15px;
+}
+.visit button:hover{
+     background-color: rgb(6, 85, 78);
+     color:yellow;
+}
+#data{
+    margin:17px;
+    margin-left:35px;
+    font-size:1.1rem;
+    font-weight:bold;
+    display:flex;
+    flex-direction:column;
+    border:2px solid black;
+    background-color:yellow;
+}
+#rides h2{
+    font-weight:bold;
+    font-size:2.4rem;
+    margin:6px;
+    text-decoration: underline;
+    color:blue;
+}
+.rides span{
+    font-weight:bold;
+    font-size:1.3rem;
+}
+.rides div{
+   margin:6px;
+   margin-bottom:10px;
+   border:2px solid black;
+   background-color:lightcyan;
+}
+.rides p{
+    font-weight:bold;
+    color:red;
+    margin-left:8px;
+}
+.water h2{
+    font-weight:bold;
+    font-size:2.4rem;
+    margin:6px;
+    text-decoration: underline;
+    color:orange;
+}
+.water span{
+    font-weight:bold;
+    font-size:1.3rem;
+}
+.water div{
+    margin:6px;
+    margin-bottom:10px;
+    border:2px solid black;
+    background-color:rgb(245, 127, 237);
+}
+.water p{
+    font-weight:bold;
+    color:rgb(130, 8, 230);
+    margin-left:8px;
+}
+#rides h3{
+    font-weight:bold;
+    font-size:2.4rem;
+    margin:6px;
+    text-decoration: underline;
+    color:blue;
+}
+#treasurehunt{
+    border:2px solid black;
+    background-color:rgb(245, 37, 37);
+    margin-bottom:25px;
+    margin-left:6px;
+}
+#treasurehunt span{
+    font-weight:bold;
+    font-size:1.3rem;
+}
+#treasurehunt p{
+    font-weight:bold;
+    color:rgb(226, 230, 8);
+    margin-left:8px;
+}
+#policy{
+    border:2px solid black;
+    margin:3rem;
+    padding:5px;
+    background-color:rgb(228, 238, 238);
+}
+#bodyofpolicy::before{
+    content:"";
+    background:url('../html/contestbg.jpg') no-repeat center center/cover;
+    position:absolute;
+    width:100%;
+    height:1080px;
+    z-index: -1;
+    opacity:0.5;
+}
+#policy h2{
+    font-size:2.5rem;
+    margin:4px;
+    text-decoration:underline;
+    color:rgb(6, 89, 128);
+}
+#policy p{
+    margin-left:8px;
+    margin-bottom:6px;
+    font-weight:bold;
+    font-size:1.1rem;
+}
+.policy ul li{
+    font-size:1.5rem;
+    color:red;
+    font-weight:bold;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.policy ul p{
+    margin-left:12px;
+}
+#disclaimer h2{
+    font-size:2.5rem;
+    margin:4px;
+    text-decoration:underline;
+    color:rgb(6, 89, 128);
+}
+#book::before{
+    content:"";
+    background:url('../html/bg5.jpg') no-repeat center center/cover;
+    position:absolute;
+    width:100%;
+    height:152vh;
+    z-index:-5;
+    opacity:0.5;
+}
+#book h1{
+    font-size:3.2rem;
+    color:red;
+    text-decoration: underline;
+    margin-left:26rem;
+    margin-top:0rem;
+}
+#pricetags{
+    display:flex;
+}
+.acs{
+    display:flex;
+    flex-direction:column;
+    border:3px solid black;
+    background-color: rgb(8, 3, 6);
+    color:gold;
+    margin:2rem;
+    justify-content:center;
+    align-items: center;
+    width:30%;
+    height:23vh;
+}
+.acs h3{
+    text-decoration:underline;
+}
+.acs div{
+    font-weight:bold;
+    padding:2px;
+}
+.booktickets{
+    display:flex;
+    flex-direction:column;
+    margin-left:24rem;
+    padding-top:1.5rem;
+    margin-right:26rem;
+    margin-bottom:4rem;
+    border:2px solid black;
+    font-weight:bold;
+    justify-content: center;
+    padding:1.5rem 2.2rem;
+    background:no-repeat center/cover url('../html/bgbookform.jpg');
+    position:relative;
+}
+.booktickets input{
+    width:35%;
+    font-weight:bold;
+    padding:5px;
+}
+.booktickets h2{
+    margin-left:7rem;
+    margin-bottom:2rem;
+    text-decoration: underline;
+}
+select{
+    font-weight:bold;
+    padding:3px;
+}
+.booktickets button{
+    width:3%;
+}
+.booktickets span{
+    border:2px solid lightgrey;
+    width:3%;
+    background-color:lightyellow
+}
+.count{
+    display:flex;
+}
+.name{
+    display:flex;
+    flex-direction:row;
+    color:blue;
+}
+#bill{
+    border:2px solid black;
+    width:30%;
+}
+#bookticketsnow{
+    margin-left:8rem;
+    padding:4px;
+    margin-top:2rem;
+    border:2px solid black;
+    width:30%;
+    background-color:green;
+    color:white;
+    font-weight:bold;
+}
+#bookticketsnow:hover{
+     cursor:pointer;
+     background-color:rgb(97, 203, 122);
+     color:black;
+}
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funzone.com/plantovisit</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <nav id="top-navbar">
+        <h3>Toll Free: 1800 1800 1800(Open 365 days)</h3>
+        <div class="btn">
+            <button class="btn-nav" onclick="window.location.href='contactus.html'">Contact Us</button>
+            <button class="btn-nav" onclick="window.location.href='chatwithus.html'">Chat With Us</button>
+        </div>
+    </nav>
+    <nav id="bottom-navbar">
+        <img src="download.jpg">
+        <div class="menu">
+            <ul>
+                <li><a href="front.html">Home</a></li>
+                <li><a href="visit.html">Plan to visit</a></li>
+                <li><a href="offers.html">Special Offers</a></li>
+                <li><a href="policy.html">Policy</a></li>
+                <li><a href="contest.html">Contests</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="plantovisit">
+       <h2>When do you plan to visit?</h2>
+       <div class="dates">
+       <div class="visit">
+         Enter the date which you decided to visit Funzone<br><input type="date" name="date" id="date">
+         <button onclick="show()">Check what special on the day</button>
+       </div>
+       <div class="show">
+           <span id="data"></span>
+       </div>
+       </div>
+    </section>
+    <section id="sponsor">
+        <h2>Partnership Companies</h2>
+        <div class="sponsorship">
+        <a href="http:\\apple.com" target="_blank"><img src ="../html/apple.jpg"></a>
+        <a href="http:\\amazon.com" target="_blank"><img src ="../html/amazon.png"></a>
+        <a href="http:\\hotstar.com" target="_blank"><img src ="../html/hotstar.webp"></a>
+        <a href="http:\\realme.com" target="_blank"><img src ="../html/realme.jpg"></a>
+        </div>
+    </section>
+    <footer>
+        <div class="copy">
+            Copyright &copy; 1996-2020 www.FunZone.com | All rights Reserved
+        </div>
+    </footer>
+    <script>
+        show=()=>{
+        let dat=document.querySelector('#date').value;
+        console.log(dat);
+        dat=JSON.stringify(dat);
+        date=new Date(dat);
+        console.log(date);
+        let data=document.querySelector('#data');
+        if(date.getDay()==0)
+        {
+           data.innerHTML="Its Sunday,Visit our Funzone Adventure Park with Family and Friends.Enjoy the best Rides and waterpark and one of the famous Treasure Hunt Activity of India.";
+        }
+        else if(date.getDay()==1)
+        {
+            data.innerHTML="Its Marky Monday,Visit us on this day and get the chance to fly off in the Hot Air Balloon and sightsee from a great height and click pictures.";
+        }
+        else if(date.getDay()==2)
+        {
+            data.innerHTML="Its Tuesday,there's nothing special on the day.You can visit us and enjoy the best adventure rides and water park and one of the famous Treasure Hunt Activity of India.";
+        }
+        else if(date.getDay()==3)
+        {
+            data.innerHTML="Its Mystery Wednesday,Visit and enjoy the prize after solving the treasure hunt Activity.Only on Wednesday,You will recieve 5x prize for solving the treasure hunt mystery.";
+        }
+        else if(date.getDay()==4)
+        {
+            data.innerHTML="Its Thursday,there will be buffet in lunch for just Rs99/-,which is 4 times less than the original Buffet.Save your money by coming on thursdays.";
+        }
+        else if(date.getDay()==5)
+        {
+            data.innerHTML="Its Friday,Visit Funzone adventure park on this day and there will be a great function and parade in the morning which all of you will enjoy.";
+        }
+        else if(date.getDay()==6)
+        {
+            data.innerHTML="Its Saturday,visit Funzone and get experience of the adventurous rides and activities.Rocket Ejector is available only on Saturdays,so visit and get the great experience of it."
+        }
+        else{
+            data.innerHTML="";
+        }
+        }
+    </script>
+</body>
+</html>

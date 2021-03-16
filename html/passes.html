@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funzone.com/passes</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <nav id="top-navbar">
+        <h3>Toll Free: 1800 1800 1800(Open 365 days)</h3>
+        <div class="btn">
+            <button class="btn-nav" onclick="window.location.href='contactus.html'">Contact Us</button>
+            <button class="btn-nav" onclick="window.location.href='chatwithus.html'">Chat With Us</button>
+        </div>
+    </nav>
+    <nav id="bottom-navbar">
+        <img src="download.jpg">
+        <div class="menu">
+            <ul>
+                <li><a href="front.html">Home</a></li>
+                <li><a href="visit.html">Plan to visit</a></li>
+                <li><a href="offers.html">Special Offers</a></li>
+                <li><a href="policy.html">Policy</a></li>
+                <li><a href="contest.html">Contests</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="passes">
+        <h2>Passes for Funzone Adventure</h2>
+        <div id="passcoupon">
+        <div class="student">
+            <img src="../html/student.jpg" onclick="togglehide1()">
+            <p id="first">If you are a student and coming with your school and school friends then you can apply this student pass and get the tickets at 50% discount.To apply student pass,enter the code-&lt;<strong>spfzpa&gt;</strong> while booking the tickets and also bring your Identity Card for the confirmation of your identity as a student.</p>
+        </div>
+        <div class="business">
+            <img src="../html/business.jpg" onclick="togglehide2()">
+            <p id="second">If you are the memberof the Funzone team or you work in the company which are in the partnersship with us,can access this business pass..So while booking the tickets for FunZone adventure enter the code-&lt;<strong>bcfzpa</strong>&gt;.Enjoy the rides,play in water park and snacks at the restaurant at a 50% discount.</p>
+        </div>
+        </div>
+    </section>
+    <section id="sponsor">
+        <h2>Partnership Companies</h2>
+        <div class="sponsorship">
+        <a href="http:\\apple.com" target="_blank"><img src ="../html/apple.jpg"></a>
+        <a href="http:\\amazon.com" target="_blank"><img src ="../html/amazon.png"></a>
+        <a href="http:\\hotstar.com" target="_blank"><img src ="../html/hotstar.webp"></a>
+        <a href="http:\\realme.com" target="_blank"><img src ="../html/realme.jpg"></a>
+        </div>
+    </section>
+    <footer>
+        <div class="copy">
+            Copyright &copy; 1996-2020 www.FunZone.com | All rights Reserved
+        </div>
+    </footer>
+    <script>
+        let first=document.getElementById('first');
+        function togglehide1(){
+        if(first.style.display!='none')
+           first.style.display='none';
+        else
+           first.style.display='block';
+        }
+        let second=document.getElementById('second');
+        function togglehide2(){
+        if(second.style.display!='none')
+           second.style.display='none';
+        else
+           second.style.display='block';
+        }
+    </script>
+</body>
+</html>

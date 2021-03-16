@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funzone.com/booktickets</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <nav id="top-navbar">
+        <h3>Toll Free: 1800 1800 1800(Open 365 days)</h3>
+        <div class="btn">
+            <button class="btn-nav" onclick="window.location.href='contactus.html'">Contact Us</button>
+            <button class="btn-nav" onclick="window.location.href='chatwithus.html'">Chat With Us</button>
+        </div>
+    </nav>
+    <nav id="bottom-navbar">
+        <img src="download.jpg">
+        <div class="menu">
+            <ul>
+                <li><a href="front.html">Home</a></li>
+                <li><a href="visit.html">Plan to visit</a></li>
+                <li><a href="offers.html">Special Offers</a></li>
+                <li><a href="policy.html">Policy</a></li>
+                <li><a href="contest.html">Contests</a></li>
+            </ul>
+        </div>
+    </nav> 
+    <section id="book">
+        <h1>Booking Tickets</h1>
+        <div id="pricetags">
+            <div class="acs">
+            <h3>Base Price</h3>
+            <div>1.Adult-Rs300/-</div>
+            <div>2.Child-Rs150/-</div>
+            <div>3.Snr. Citizen-Rs230/-</div>
+           </div>
+           <div class="acs">
+            <h3>Single Prices</h3>
+            <div>1.Adventure Rides-Rs250/-</div>
+            <div>2.WaterPark-Rs250/-</div>
+            <div>3.Treasure Hunt-Rs200/-</div>
+        </div>
+        <div class="acs">
+            <h3>Combo Prices</h3>
+            <div>1.Adventure Rides+WaterPark-Rs400/-</div>
+            <div>2.Adventure Rides+Treasure Hunt-Rs350/-</div>
+            <div>3.All three-500/</div>
+        </div>
+        </div>
+        <div class="booktickets">
+            <h2>Book Tickets Now</h2>
+            Visit Date<input type="date" name="myDate" id="myDate" required>
+            Email-ID<input type="email" name="myEmail" id="myEmail" placeholder="Enter email-ID here" required>
+            <div class="name">
+            Adults
+            </div>
+            <div class="count"><button class="adults" onclick="minus1()">-</button><span id="number1">0</span><button class="adults" onclick="plus1()">+</button></div>
+            <div class="name">
+                Child
+            </div>    
+            <div class="count"><button class="adults" onclick="minus2()">-</button><span id="number2">0</span><button class="adults" onclick="plus2()">+</button></div>
+            <div class="name">
+                Snr. Citizen
+            </div>    
+            <div class="count"><button class="adults" onclick="minus3()">-</button><span id="number3">0</span><button class="adults" onclick="plus3()">+</button></div>
+            <label for="optionthemes">Themes</label>
+               <select name="optionthemes" id="optionthemes" onclick="showbill()">
+                  <option value="Adventurerides">Adventure Rides</option>
+                  <option value="Waterpark">Water Park</option>
+                  <option value="Treasurehunt">Treasure Hunt</option>
+                  <option value="adventurerides+treasurehunt">Adventure Rides+Treasure Hunt</option>
+                  <option value="adventurerides+waterpark">Adventure Rides+Water Park</option>
+                  <option value="allthree">All three</option>
+              </select>
+            Coupon Code<input type="text" name="couponcode" id="couponcode" oninput="showbill()" placeholder="Enter code here">
+            Bill<span id="bill">Rs 0</span>
+            <button id="bookticketsnow">Book</button>
+        </div>
+    </section>
+</section>
+<section id="sponsor">
+    <h2>Partnership Companies</h2>
+    <div class="sponsorship">
+    <a href="http:\\apple.com" target="_blank"><img src ="../html/apple.jpg"></a>
+    <a href="http:\\amazon.com" target="_blank"><img src ="../html/amazon.png"></a>
+    <a href="http:\\hotstar.com" target="_blank"><img src ="../html/hotstar.webp"></a>
+    <a href="http:\\realme.com" target="_blank"><img src ="../html/realme.jpg"></a>
+    </div>
+</section>
+<footer>
+    <div class="copy">
+        Copyright &copy; 1996-2020 www.FunZone.com | All rights Reserved
+    </div>
+</footer>
+    <script>
+        let number1=document.querySelector('#number1');
+        let a=0;
+        function plus1(){
+            if(a<100){
+               a++;
+               number1.innerHTML=a;
+            }
+            showbill();
+        }
+        function minus1(){
+           if(a>0){
+               a--;
+               number1.innerHTML=a;
+           }
+           showbill();
+        }
+           let number2=document.querySelector('#number2');
+           let b=0;
+           function plus2(){
+            if(b<100){
+               b++;
+               number2.innerHTML=b;
+            }
+            showbill();
+        }
+        function minus2(){
+           if(b>0){
+               b--;
+               number2.innerHTML=b;
+           }
+           showbill();
+        }
+           let number3=document.querySelector('#number3');
+           let c=0;
+           function plus3(){
+            if(c<100){
+               c++;
+               number3.innerHTML=c;
+            }
+            showbill();
+        }
+        function minus3(){
+           if(c>0){
+               c--;
+               number3.innerHTML=c;
+           }
+           showbill();
+        }
+        let adult=300,child=150,senior=230;
+        let ad=250,wp=250,th=200;
+        let adwp=400,adth=350,all=500;
+        let themes=document.querySelector('#optionthemes');
+        let bill=document.querySelector('#bill');
+        let couponcode=document.querySelector('#couponcode');
+        function showbill(){
+        if(couponcode.value=="")
+        {
+            if(themes.value=="Adventurerides")
+             bill.innerHTML="Rs "+(a*adult+b*child+c*senior+ad);
+            else if(themes.value=="Waterpark")
+             bill.innerHTML="Rs "+(a*adult+b*child+c*senior+wp);
+            else if(themes.value=="Treasurehunt")
+              bill.innerHTML="Rs "+(a*adult+b*child+c*senior+th);
+            else if(themes.value=="adventurerides+treasurehunt")
+             bill.innerHTML="Rs "+(a*adult+b*child+c*senior+adth);
+            else if(themes.value=="adventurerides+waterpark") 
+             bill.innerHTML="Rs "+(a*adult+b*child+c*senior+adwp);
+            else if(themes.value=="allthree")
+             bill.innerHTML="Rs "+(a*adult+b*child+c*senior+all); 
+        }
+        else if(couponcode.value=="bdfzpa")
+        {
+            if(themes.value=="Adventurerides")
+             bill.innerHTML="Rs "+(a*adult+(b-1)*child+c*senior+ad);
+            else if(themes.value=="Waterpark")
+             bill.innerHTML="Rs "+(a*adult+(b-1)*child+c*senior+wp);
+            else if(themes.value=="Treasurehunt")
+              bill.innerHTML="Rs "+(a*adult+(b-1)*child+c*senior+th);
+            else if(themes.value=="adventurerides+treasurehunt")
+             bill.innerHTML="Rs "+(a*adult+(b-1)*child+c*senior+adth);
+            else if(themes.value=="adventurerides+waterpark") 
+             bill.innerHTML="Rs "+(a*adult+(b-1)*child+c*senior+adwp);
+            else if(themes.value=="allthree")
+             bill.innerHTML="Rs "+(a*adult+(b-1)*child+c*senior+all); 
+        }
+        else if(couponcode.value=="gpfzpa"&&(a+b+c>=7))
+        {
+            if(themes.value=="Adventurerides")
+             bill.innerHTML="Rs "+0.7*(a*adult+(b)*child+c*senior+ad);
+            else if(themes.value=="Waterpark")
+             bill.innerHTML="Rs "+0.7*(a*adult+(b)*child+c*senior+wp);
+            else if(themes.value=="Treasurehunt")
+              bill.innerHTML="Rs "+0.7*(a*adult+(b)*child+c*senior+th);
+            else if(themes.value=="adventurerides+treasurehunt")
+             bill.innerHTML="Rs "+0.7*(a*adult+(b)*child+c*senior+adth);
+            else if(themes.value=="adventurerides+waterpark") 
+             bill.innerHTML="Rs "+0.7*(a*adult+(b)*child+c*senior+adwp);
+            else if(themes.value=="allthree")
+             bill.innerHTML="Rs "+0.7*(a*adult+(b)*child+c*senior+all); 
+        }
+        else if(couponcode.value=="spfzpa"&&a==0&&c==0)
+        {
+            if(themes.value=="Adventurerides")
+             bill.innerHTML="Rs "+0.5*((b)*child+ad);
+            else if(themes.value=="Waterpark")
+             bill.innerHTML="Rs "+0.5*((b)*child+wp);
+            else if(themes.value=="Treasurehunt")
+              bill.innerHTML="Rs "+0.5*((b)*child+th);
+            else if(themes.value=="adventurerides+treasurehunt")
+             bill.innerHTML="Rs "+0.5*((b)*child+adth);
+            else if(themes.value=="adventurerides+waterpark") 
+             bill.innerHTML="Rs "+0.5*((b)*child+adwp);
+            else if(themes.value=="allthree")
+             bill.innerHTML="Rs "+0.5*((b)*child+all); 
+        }
+        else if(couponcode.value=="bcfzpa")
+        {
+            if(themes.value=="Adventurerides")
+             bill.innerHTML="Rs "+0.5*(a*adult+(b)*child+c*senior+ad);
+            else if(themes.value=="Waterpark")
+             bill.innerHTML="Rs "+0.5*(a*adult+(b)*child+c*senior+wp);
+            else if(themes.value=="Treasurehunt")
+              bill.innerHTML="Rs "+0.5*(a*adult+(b)*child+c*senior+th);
+            else if(themes.value=="adventurerides+treasurehunt")
+             bill.innerHTML="Rs "+0.5*(a*adult+(b)*child+c*senior+adth);
+            else if(themes.value=="adventurerides+waterpark") 
+             bill.innerHTML="Rs "+0.5*(a*adult+(b)*child+c*senior+adwp);
+            else if(themes.value=="allthree")
+             bill.innerHTML="Rs "+0.5*(a*adult+(b)*child+c*senior+all); 
+        }
+        else{
+            bill.innerHTML="Invalid code";
+        }
+    }
+    </script>
+</body>
+</html>
